@@ -1,0 +1,56 @@
+/* Element selector */
+
+h1{
+    color: greenyellow;
+}
+ul li {
+    color: blue;
+  }
+
+  /* Pseudo classes */
+  ul li:first-child {
+    color: red;
+    font-weight: bold;
+  }
+  ul li:last-child{
+    color: green;
+    font-weight: bold;
+  }
+  ul li:nth-of-type(2n+3){
+    color: plum;
+  }
+  div:only-child {
+    color: red;
+  }
+  
+  div {
+    display: inline-block;
+    margin: 6px;
+    outline: 1px solid;
+  }
+  section p:nth-child(2){
+    color: aqua;
+  }
+  section p:nth-of-type(2){
+    color: brown;
+
+  }
+  section ul{
+    /* color: red; */
+    border: 3px solid black;
+  }
+  /* Use of pseudo elements before and after */
+  h1::before{
+    content: 'this is before ';
+    color: cadetblue;
+  }
+  h1::after{
+    content: 'this is after ';
+    color:blueviolet ;
+  }
+  section ul li{
+    border: inherit;
+  }
+  
+  
+  
